@@ -1,0 +1,128 @@
+body {
+  font-family: "Lexend", sans-serif;
+  background-image: url('images/image.png');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-position: center; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+
+header {
+  padding: 0px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+/* The navigation bar styles */
+nav {
+  padding: 15px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* links to take to specific pages */
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav-links li a {
+  color: #000000;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  background-color: #bdbdbd; /* Darker background on hover/active */
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.logo1 {
+  width: 300px; 
+  position: absolute; 
+  top: 150px; 
+  left: 50%; 
+  transform: translateX(-50%);
+}
+
+/* H1 */
+.namemusic {
+  font-weight: 700;
+  font-size: 3.5em;
+  color: #000000;
+  padding-left: 650px; 
+  margin-top: -500px; 
+  text-align: center; 
+}
+
+/* API */
+.sound {
+  padding: 100px;
+}
+
+.sound iframe {
+  border-radius: 20px;
+}
+
+/* Media Layout Footer */
+footer {
+  padding: 400px 0;
+  text-align: center;
+  margin-top: autopx; /* Ensure footer is at the bottom */
+}
+
+.medialayout {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medialayout .w-layout-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.medialayout .image {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+
+
+

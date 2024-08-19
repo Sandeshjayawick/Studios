@@ -1,0 +1,390 @@
+/* Making body and header and footer*/
+body {
+    font-family: "Lexend", sans-serif;
+    font-family: "Lexend", sans-serif;
+    background-image: url('images/image.png');
+    background-size: cover; /* Ensure the background covers the entire page */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-attachment: fixed; /* Fix the background so it doesn't scroll */
+    background-position: center; /* Center the background image */
+  }
+  
+  
+  header {
+  
+    padding: 0px 0;
+    
+  }
+  
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+  
+  /* The navigation bar styles */
+  nav {
+   
+    padding: 15px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  /* links to take to specific pages*/
+  .nav-links {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .nav-links li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  
+  .nav-links li a {
+    
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 14px;
+    
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    background-color: #bdbdbd; /* Darker background on hover/active */
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  /* Main content styles */
+  
+  
+  .Shopproducts {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .product-list {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product {
+    width: calc(50% - 10px);
+    margin: 10px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  button {
+    background-color: #283335;
+    font-weight: 700;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .filters{
+    padding-top: 50px;
+  }
+  
+  select {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button-Shopproducts {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .cart {
+    width: 25%;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cart button {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #008CBA;
+  }
+  
+  .cart button:hover {
+    background-color: #005f6b;
+  }
+  
+  .paymentbox {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    display: none; 
+    max-width: 500px; 
+    margin: 0 auto;
+}
+
+.visamaster { /* adjusting the pictures for the paymentbox*/
+    margin-top: 5px; 
+}
+
+.visamastercard {
+    width: 40px; 
+    margin-right: 5px; 
+}
+
+
+
+
+
+/* Style for the paymentbox form */
+#payment-form {
+    width: 100%;
+}
+
+#payment-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#payment-form input[type="text"] {
+    width: calc(100% - 16px); 
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#payment-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#payment-form button:hover {
+    background-color: #45a049;
+}
+
+.adressbox {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.adressbox h2 {
+    margin-bottom: 10px;
+}
+
+#adress-form {
+    width: 100%;
+}
+
+#adress-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#adress-form input[type="text"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#adress-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#adress-form button:hover {
+    background-color: #45a049;
+}
+
+/* the styling for the contact infor box */
+.contactinfo {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 500px; 
+    margin: 0 auto;
+    display: none; 
+}
+
+.contactinfo h2 {
+    margin-bottom: 10px;
+}
+
+#contact-form {
+    width: 100%;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"] {
+    width: calc(100% - 16px); 
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #45a049;
+}
+
+
+/* Styling for the bill summary*/
+.bill-summary-Shopproducts {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 500px; 
+    margin: 0 auto;
+    display: none; 
+}
+
+.bill-summary-Shopproducts h2 {
+    margin-bottom: 10px;
+}
+
+/* Style for the bill details */
+.bill-details {
+    margin-bottom: 20px;
+}
+
+.bill-details p {
+    margin: 5px 0;
+}
+
+/* Style for the done button */
+.bill-summary-Shopproducts button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bill-summary-Shopproducts button:hover {
+    background-color: #45a049;
+}
+
+  
+  /* Media layout */
+  .medialayout {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .medialayout .w-layout-grid {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .medialayout .image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .foot {
+    text-align: center;
+    padding: 20px;
+    
+  }
+  
